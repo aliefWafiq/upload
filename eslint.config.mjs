@@ -13,4 +13,8 @@ const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
 ];
 
+module.exports = {
+  ignorePatterns: ["app/generated/"],
+};
+
 export default eslintConfig;
